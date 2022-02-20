@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;700&display=swap');
+/* Font: Quicksand,  */
 
 
 *{
@@ -16,18 +17,43 @@ nav a:hover{
 }
 
 body{
-    font-family: 'Quicksand', 'sans-serif';
+    font-family: 'Quicksand', cursive;
     margin: 0;
     padding: 0;
 }
 
+/* 
+.jumbotron img{
+    width: 100%;
+    object-fit: fill;
+    object-position: center;
+} */
+
+.jumbotron h1{
+    font-family: 'Fredoka One', cursive;
+    font-size: 60px;
+    margin: 0;
+    letter-spacing: 20px;
+    position: relative;
+    vertical-align: middle;
+    z-index: 1;
+}
+
+.jumbotron p{
+    font-size: 24px;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 1;
+}
+
 
 .jumbotron{
-    font-size: 20px;
     padding: 240px;
-    background-color: rgb(241, 209, 24);
     text-align: center;
     color: white;
+    background: url('https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//101/MTA-9980542/cap_panah_merah_benih__pakcoy_-_pakchoy_nauli_cap_panah_merah_isi_10_gr_full03_kedrnc98.jpg');
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 nav li{
@@ -42,7 +68,7 @@ li{
 }
 
 #head-nav{
-    background-color: rgb(240, 227, 44);
+    background-color: rgb(255, 252, 64);
     padding: 4px;
     text-align: center;
     margin: 0;
@@ -50,11 +76,12 @@ li{
 }
 
 nav{
-    background-color: #303030fb;
+    background-color: #3b3b3bfb;
     padding: 5px;
     position: sticky;
     top: 0;
     text-align: center;
+    z-index: 2;
 }
 
 .card{
@@ -66,7 +93,7 @@ nav{
 
 main{
     padding: 64px;
-    padding-top: 20px;
+    padding-top: 16px;
     overflow: auto;
 }
 
@@ -97,9 +124,11 @@ aside{
 }
 
 
+
 /*
     Pengaturan CSS Flexbox dan flex item.
  */
+
 .flex-container-column{
     display: flex;
     flex-direction: column;
@@ -124,7 +153,7 @@ aside{
     padding-top: 40px;
 }
 #vegetable{
-    padding-top: 46px;
+    padding-top: 42px;
 }
 #fruits{
     padding-top: 40px;
@@ -135,6 +164,46 @@ aside{
 #about{
     padding-top: 40px;
 }
+
+
+
+
+
+/* Pengaturan flex vegetable
+ */
+.flex-box-vegetable{
+    display: flex;
+    flex-direction: column;
+
+    max-width: 2000px;
+    margin-left: 0px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.flex-box-row-vegetable{
+    display: flex;
+    text-align: center;
+}
+ 
+.flex-item-vegetable{
+    flex-basis: 33.3%;
+    margin: 0 auto;
+
+    font-size: 1.5em;
+    text-align: center;
+    padding: 20px;
+    border: 0.01px solid rgba(133, 133, 133, 0.842);
+    background-color: -webkit-linear-gradient(top, #d2d2d2, #ddd);
+    cursor: default;
+}
+
+.flex-item-vegetable img{
+    max-width: 340px;
+}
+
+
+
 
 
 
