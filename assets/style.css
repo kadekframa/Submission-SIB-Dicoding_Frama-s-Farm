@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+nav a{
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover{
+    font-weight: bolder;
+}
+
+body{
+    font-family: 'Quicksand', 'sans-serif';
+    margin: 0;
+    padding: 0;
+}
+
+
+.jumbotron{
+    font-size: 20px;
+    padding: 240px;
+    background-color: rgb(241, 209, 24);
+    text-align: center;
+    color: white;
+}
+
+nav li{
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+    color: white;
+}
+
+li{
+    color: white;
+}
+
+#head-nav{
+    background-color: rgb(240, 227, 44);
+    padding: 4px;
+    text-align: center;
+    margin: 0;
+    position: sticky;
+}
+
+nav{
+    background-color: #303030fb;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    text-align: center;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(150, 150, 150, 0.2);
+    border-radius: 16px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+main{
+    padding: 64px;
+    padding-top: 20px;
+    overflow: auto;
+}
+
+.deskripsi-singkat{
+    float: left;
+    width: 70%;
+}
+
+
+.profile:hover{
+    box-shadow: 0 4px 8px 0 rgba(117, 117, 113, 0.884);
+    transition: all .4s ease-in;
+}
+
+.profile header{
+    text-align: center;
+}
+
+.profile img{
+    border-block-end-width: 200px;
+    width: 240px;
+}
+
+aside{
+    float: right;
+    width: 30%;
+    padding-left: 20px;
+}
+
+
+/*
+    Pengaturan CSS Flexbox dan flex item.
+ */
+.flex-container-column{
+    display: flex;
+    flex-direction: column;
+
+    /* poperty pendukung */
+    max-width: 3000px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.flex-container-row{
+    display: flex;
+}
+
+.flex-container-content{
+    display: flex;
+    flex-direction: column;
+}
+
+#profil-kadek-frama,
+.deskripsi-singkat{
+    padding-top: 40px;
+}
+#vegetable{
+    padding-top: 46px;
+}
+#fruits{
+    padding-top: 40px;
+}
+#shop{
+    padding-top: 40px;
+}
+#about{
+    padding-top: 40px;
+}
+
+
+
+/*
+    Pengaturan flex item footer 
+ */
+#contact{
+    background-color: #1d1d1d;
+    padding: 74px;
+}
+
+.logo-content{
+    float: left;
+    text-align: center;
+    line-height: 64px;
+    width: 33.3%;
+    height: 100%;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.alamat-content{
+    float: left;
+    text-align: center;
+    line-height: 64px;
+    width: 33.3%;
+    height: 100%;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.send-us-content{
+    float: left;
+    text-align: center;
+    line-height: 20px;
+    width: 33.3%;
+    height: 100%;
+    background-color: white;
+    border: 1px solid black;
+}
+
+header{
+    display: inline;
+}
