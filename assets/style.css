@@ -5,6 +5,7 @@
 *{
     box-sizing: border-box;
 }
+
 nav a{
     font-size: 18px;
     font-weight: 400;
@@ -22,14 +23,8 @@ body{
     padding: 0;
 }
 
-/* 
-.jumbotron img{
-    width: 100%;
-    object-fit: fill;
-    object-position: center;
-} */
 
-.jumbotron h1{
+/* .jumbotron h1{
     font-family: 'Fredoka One', cursive;
     font-size: 60px;
     margin: 0;
@@ -44,17 +39,145 @@ body{
     letter-spacing: 2px;
     position: relative;
     z-index: 1;
-}
+} */
 
 
 .jumbotron{
-    padding: 240px;
-    text-align: center;
-    color: white;
-    background: url('https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//101/MTA-9980542/cap_panah_merah_benih__pakcoy_-_pakchoy_nauli_cap_panah_merah_isi_10_gr_full03_kedrnc98.jpg');
-    background-size: cover;
-    background-attachment: fixed;
+    margin: 0;;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
+
+
+/* CSS Slider */
+.slider{
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 500%;
+    height: 540px;
+    display: flex;
+}
+
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 100%;
+    object-position: center;
+}
+
+
+
+/* css for manual slider */
+.navigation-manual{
+    position: relative;
+    width: 100%;
+    bottom: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.manual-btn{
+    border: 2px solid #ffffffba;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    position: relative;
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background: #ffffffba;
+}
+
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+
+
+/* CSS for automatic navigation */
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 506px;
+    left: 0px;
+}
+
+.navigation-auto div{
+    border: 2px solid #ffffffba;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #ffffffba;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #ffffffba;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #ffffffba;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #ffffffba;
+}
+
+
+
+
+
+
+
+
+
 
 nav li{
     display: inline;
@@ -67,13 +190,27 @@ li{
     color: white;
 }
 
-#head-nav{
+.judul-nav{
     background-color: rgb(255, 252, 64);
-    padding: 4px;
+    color: rgb(82, 82, 82);
+    padding: 0;
+    padding-top: 4px;
     text-align: center;
     margin: 0;
-    position: sticky;
+    font-weight: bold;
+    font-family: 'Fredoka One', cursive;
+    letter-spacing: 6px;
 }
+
+.head-nav{
+    background-color: rgb(255, 252, 64);
+    padding: 0;
+    padding-bottom: 4px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
 
 nav{
     background-color: #3b3b3bfb;
@@ -83,6 +220,7 @@ nav{
     text-align: center;
     z-index: 2;
 }
+
 
 .card{
     box-shadow: 0 4px 8px 0 rgba(150, 150, 150, 0.2);
@@ -146,6 +284,11 @@ aside{
 .flex-container-content{
     display: flex;
     flex-direction: column;
+    
+}
+
+.flex-container-content h2{
+    font-size: 36px;
 }
 
 #profil-kadek-frama,
@@ -187,7 +330,7 @@ aside{
 }
  
 .flex-item-vegetable{
-    flex-basis: 33.3%;
+    flex-basis: 33.33%;
     margin: 0 auto;
 
     font-size: 1.5em;
@@ -200,6 +343,51 @@ aside{
 
 .flex-item-vegetable img{
     max-width: 340px;
+}
+
+#vegetable h2,
+p{
+    text-align: center;
+}
+
+
+
+/* Pengaturan flex fruits
+ */
+ .flex-box-fruits{
+    display: flex;
+    flex-direction: column;
+
+    max-width: 2000px;
+    margin-left: 0px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.flex-box-row-fruits{
+    display: flex;
+    text-align: center;
+}
+ 
+.flex-item-fruits{
+    flex-basis: 33.3%;
+    margin: 0 auto;
+
+    font-size: 1.5em;
+    text-align: center;
+    padding: 20px;
+    border: 0.01px solid rgba(133, 133, 133, 0.842);
+    background-color: -webkit-linear-gradient(top, #d2d2d2, #ddd);
+    cursor: default;
+}
+
+.flex-item-fruits img{
+    max-width: 340px;
+}
+
+#fruits h2,
+p{
+    text-align: center;
 }
 
 

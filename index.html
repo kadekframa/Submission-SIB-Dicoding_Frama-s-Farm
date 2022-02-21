@@ -9,7 +9,8 @@
 </head>
 <body>
     <header>
-        <p id="head-nav">Vegetables For the Healthy Indonesian Generation</p>
+        <p class="judul-nav">FRAMA'S FARM</p>
+        <p class="head-nav">Vegetables For the Healthy Indonesian Generation</p>
         <nav>
             <ul>
                 <li><a href="#profil-kadek-frama">Profil</a></li>
@@ -25,14 +26,67 @@
 
 
     <main>
+        
+        <div class="flex-container-column"></div>
 
-        <div class="jumbotron">
-            <h1>FRAMA'S FARM</h1>
-            <p>Penyedia Sayur dan Buah Segar Lokal-an</p>
-            <!-- <img src="assets/image/ladang-sayur.jpg" alt=""> -->
-        </div>
 
-        <div class="flex-container-column">
+            <section class="flex-container-row">
+                
+
+                <!-- image slider start -->
+                <div class="slider">
+                    <div class="slides">
+                    <!-- radio buttons start -->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <!-- radio buttons End -->
+
+                    <!-- slides images start -->
+                    <div class="slide first">
+                        <img src="assets/image/sayur-hijau.jpg" alt="">
+                        <p>View</p>
+                    </div>
+                    <div class="slide">
+                        <img src="assets/image/kebun-sayur.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/image/ladang-sayur.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="assets/image/ladang-selada.jpg" alt="">
+                    </div>
+                    <!-- slides images end -->
+
+                    <!-- automatic navigation start -->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                    <!-- automatic navigation end -->
+                    </div>
+
+                    <!-- manual navigaton start -->
+                    <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                    </div>
+                    <!-- manual navigaton end -->
+
+                </div>
+                <!-- image slider End -->
+
+            </section>
+
+
+
+
+        
 
             <section class="flex-container-row">
                 <article class="deskripsi-singkat card">
@@ -87,15 +141,12 @@
                         Frama Farm merupakan salah satu usah yang bergerak di bidang pertanian yang telah berdiri sejak tahun 1999 di Bali. 
                         Sampai saat ini Frama Farm sudah memiliki Luas Wilayah perkebunan sekitar 4 Ha dan sudah berhasil membuat platform secara mandiri menjual hasil pertaniannya.
                     </p><p>
-                        Frama Farm merupakan salah satu usah yang bergerak di bidang pertanian yang telah berdiri sejak tahun 1999 di Bali. 
-                        Sampai saat ini Frama Farm sudah memiliki Luas Wilayah perkebunan sekitar 4 Ha dan sudah berhasil membuat platform secara mandiri menjual hasil pertaniannya.
-                    </p>
 
                     <div class="flex-box-vegetable">
                         <div class="flex-box-row-vegetable">
                             <figure class="flex-item-vegetable">
                                 <img src="assets/image/shop/selada.jpg" alt="Selada" title="Selada">
-                                <p>Selada Iceberg</p>
+                                <p>Selada Escarole</p>
                             </figure>
                             <figure class="flex-item-vegetable">
                                 <img src="assets/image/shop/bayam.jpg" alt="Bayam" title="Bayam">
@@ -112,8 +163,8 @@
                                 <p>Brokoli</p>
                             </figure>
                             <figure class="flex-item-vegetable">
-                                <img src="assets/image/shop/romen.jpg" alt="Selada" title="Romen">
-                                <p>Selada Romen</p>
+                                <img src="assets/image/shop/romen.jpg" alt="Selada Romaine" title="Romaine">
+                                <p>Selada Romaine</p>
                             </figure>
                             <figure class="flex-item-vegetable">
                                 <img src="assets/image/shop/wortel.jpg" alt="Wortel" title="Wortel">
@@ -147,51 +198,48 @@
                         Frama Farm merupakan salah satu usah yang bergerak di bidang pertanian yang telah berdiri sejak tahun 1999 di Bali. 
                         Sampai saat ini Frama Farm sudah memiliki Luas Wilayah perkebunan sekitar 4 Ha dan sudah berhasil membuat platform secara mandiri menjual hasil pertaniannya.
                     </p><p>
-                        Frama Farm merupakan salah satu usah yang bergerak di bidang pertanian yang telah berdiri sejak tahun 1999 di Bali. 
-                        Sampai saat ini Frama Farm sudah memiliki Luas Wilayah perkebunan sekitar 4 Ha dan sudah berhasil membuat platform secara mandiri menjual hasil pertaniannya.
-                    </p>
 
-                    <div class="flex-box-vegetable">
-                        <div class="flex-box-row-vegetable">
-                            <figure class="flex-item-vegetable">
-                                <img src="assets/image/shop/selada.jpg" alt="Selada" title="Selada">
-                                <p>Selada Iceberg</p>
+                    <div class="flex-box-fruits">
+                        <div class="flex-box-row-fruits">
+                            <figure class="flex-item-fruits">
+                                <img src="assets/image/shop/jeruk.jpg" alt="Jeruk" title="Jeruk">
+                                <p>Jeruk</p>
                             </figure>
-                            <figure class="flex-item-vegetable">
-                                <img src="assets/image/shop/bayam.jpg" alt="Bayam" title="Bayam">
-                                <p>Bayam</p>
+                            <figure class="flex-item-fruits">
+                                <img src="assets/image/shop/apel.jpg" alt="Apel" title="Apel">
+                                <p>Apel</p>
                             </figure>
-                            <figure class="flex-item-vegetable">
-                                <img src="assets/image/shop/kol.jpg" alt="kol" title="Kol">
-                                <p>Kol</p>
-                            </figure>
-                        </div>
-                        <div class="flex-box-row-vegetable">
-                            <figure class="flex-item-vegetable">
-                                <img src="assets/image/shop/brokoli.jpg" alt="Brokoli" title="Brokoli">
-                                <p>Brokoli</p>
-                            </figure>
-                            <figure class="flex-item-vegetable">
-                                <img src="assets/image/shop/romen.jpg" alt="Selada" title="Romen">
-                                <p>Selada Romen</p>
-                            </figure>
-                            <figure class="flex-item-vegetable">
-                                <img src="assets/image/shop/wortel.jpg" alt="Wortel" title="Wortel">
-                                <p>Wortel</p>
+                            <figure class="flex-item-fruits">
+                                <img src="assets/image/shop/pisang.jpg" alt="Pisang" title="Pisang">
+                                <p>Pisang</p>
                             </figure>
                         </div>
-                        <div class="flex-box-row-vegetable">
+                        <div class="flex-box-row-fruits">
                             <figure class="flex-item-vegetable">
-                                <img src="assets/image/shop/kale.jpg" alt="Kale" title="Kale">
-                                <p>Kale</p>
+                                <img src="assets/image/shop/alpukat.jpg" alt="Alpukat" title="Alpukat">
+                                <p>Alpukat</p>
                             </figure>
-                            <figure class="flex-item-vegetable">
-                                <img src="assets/image/shop/rucola.jpg" alt="Rucola" title="Rucola">
-                                <p>Rucola</p>
+                            <figure class="flex-item-fruits">
+                                <img src="assets/image/shop/timun.jpg" alt="Timun" title="Timun">
+                                <p>Timun</p>
                             </figure>
-                            <figure class="flex-item-vegetable">
-                                <img src="assets/image/shop/pakcoy.png" alt="Pakcoy" title="Pakcoy">
-                                <p>Pakcoy</p>
+                            <figure class="flex-item-fruits">
+                                <img src="assets/image/shop/semangka.jpg" alt="Semangka" title="Semangka">
+                                <p>Semangka</p>
+                            </figure>
+                        </div>
+                        <div class="flex-box-row-fruits">
+                            <figure class="flex-item-fruits">
+                                <img src="assets/image/shop/anggur.jpg" alt="Anggur" title="Anggur">
+                                <p>Anggur</p>
+                            </figure>
+                            <figure class="flex-item-fruits">
+                                <img src="assets/image/shop/pear.jpg" alt="Pear" title="Pear">
+                                <p>Pear</p>
+                            </figure>
+                            <figure class="flex-item-fruits">
+                                <img src="assets/image/shop/melon.jpg" alt="Melon" title="Melon">
+                                <p>Melon</p>
                             </figure>
                         </div>
                     </div>
@@ -255,6 +303,6 @@
 
 
 
-    <script src=""></script>
+    <script src="assets/automation.js"></script>
 </body>
 </html>
