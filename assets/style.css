@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;700&display=swap');
-/* Font: Quicksand,  */
+/* Font: Quicksand, Fredoka One, sans-serif */
 
 
 *{
@@ -19,45 +19,47 @@ nav a:hover{
 
 body{
     font-family: 'Quicksand', cursive;
+    font-size: 18px;
     margin: 0;
     padding: 0;
 }
 
+h2{
+    color: rgb(56, 56, 56);
+}
 
-/* .jumbotron h1{
+.website-name{
+    height: 0px;
+}
+
+.website-name .title-web{
+    position: relative;
     font-family: 'Fredoka One', cursive;
-    font-size: 60px;
-    margin: 0;
-    letter-spacing: 20px;
-    position: relative;
-    vertical-align: middle;
-    z-index: 1;
+    font-size: 64px;
+    top: 216px;
+    color: white;
+    letter-spacing: 8px;
+    text-shadow: 2px 2px 24px rgba(51, 51, 51, 0.774);
 }
 
-.jumbotron p{
-    font-size: 24px;
-    letter-spacing: 2px;
+.website-name p{
     position: relative;
-    z-index: 1;
-} */
-
-
-.jumbotron{
-    margin: 0;;
-    padding: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 36px;
+    top: 164px;
+    left: 0px;
+    color: white;
+    
+    text-shadow: 2px 2px 34px black;
 }
 
 
 
 
-/* CSS Slider */
+/* CSS Slider Show Gambar */
 .slider{
     width: 100%;
     border-radius: 16px;
+    margin-top: 4px;
     overflow: hidden;
 }
 
@@ -84,7 +86,7 @@ body{
 
 
 
-/* css for manual slider */
+/* CSS untuk manual slider */
 .navigation-manual{
     position: relative;
     width: 100%;
@@ -131,7 +133,7 @@ body{
 
 
 
-/* CSS for automatic navigation */
+/* CSS untuk automatis navigasi */
 
 .navigation-auto{
     position: absolute;
@@ -171,14 +173,7 @@ body{
 }
 
 
-
-
-
-
-
-
-
-
+/* CSS untuk header nav */
 nav li{
     display: inline;
     list-style-type: none;
@@ -199,6 +194,7 @@ li{
     margin: 0;
     font-weight: bold;
     font-family: 'Fredoka One', cursive;
+    font-size: 24px;
     letter-spacing: 6px;
 }
 
@@ -207,7 +203,7 @@ li{
     padding: 0;
     padding-bottom: 4px;
     text-align: center;
-    letter-spacing: 1px;
+    letter-spacing: 0.4px;
     margin: 0;
 }
 
@@ -221,6 +217,9 @@ nav{
     z-index: 2;
 }
 
+header{
+    display: inline;
+}
 
 .card{
     box-shadow: 0 4px 8px 0 rgba(150, 150, 150, 0.2);
@@ -229,20 +228,44 @@ nav{
     margin-top: 20px;
 }
 
+
 main{
     padding: 64px;
     padding-top: 16px;
     overflow: auto;
 }
 
+
+/* CSS Profile Konten */
 .deskripsi-singkat{
     float: left;
     width: 70%;
 }
 
+aside{
+    float: right;
+    width: 30%;
+    height: 100%;
+    padding-left: 20px;
+    
+}
+
+#profil-kadek-frama table{
+    width: 100%;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+#profil-kadek-frama h3{
+    text-align: center;
+}
+
+#profil-kadek-frama th{
+    text-align: left;
+}
 
 .profile:hover{
-    box-shadow: 0 4px 8px 0 rgba(117, 117, 113, 0.884);
+    box-shadow: 0 4px 10px 0 rgba(136, 136, 136, 0.734);
     transition: all .4s ease-in;
 }
 
@@ -255,11 +278,11 @@ main{
     width: 240px;
 }
 
-aside{
-    float: right;
-    width: 30%;
-    padding-left: 20px;
+.profile h2{
+    font-size: 24px;
 }
+
+
 
 
 
@@ -284,22 +307,33 @@ aside{
 .flex-container-content{
     display: flex;
     flex-direction: column;
+    margin-bottom: 0;
     
+}
+
+.our-product{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    letter-spacing: 10px;
+    padding: 0;
+    margin: 0;
 }
 
 .flex-container-content h2{
     font-size: 36px;
 }
 
-#profil-kadek-frama,
-.deskripsi-singkat{
+
+.deskripsi-singkat h2, .profile h2{
     padding-top: 40px;
 }
+
 #vegetable{
-    padding-top: 42px;
+    padding-top: 50px;
 }
 #fruits{
-    padding-top: 40px;
+    padding-top: 50px;
 }
 #shop{
     padding-top: 40px;
@@ -326,12 +360,13 @@ aside{
 
 .flex-box-row-vegetable{
     display: flex;
+    justify-content: center;
     text-align: center;
 }
  
 .flex-item-vegetable{
-    flex-basis: 33.33%;
-    margin: 0 auto;
+    flex-basis: 30%;
+    margin: 0 ;
 
     font-size: 1.5em;
     text-align: center;
@@ -342,12 +377,26 @@ aside{
 }
 
 .flex-item-vegetable img{
-    max-width: 340px;
+    max-width: 240px;
+    max-height: 240px;
+}
+
+.flex-item-vegetable p{
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+}
+
+.flex-item-vegetable p + p{
+    padding: 0;
+    margin: 1px;
+    font-size: 19px;
 }
 
 #vegetable h2,
 p{
     text-align: center;
+    margin-top: 17px;
 }
 
 
@@ -366,12 +415,13 @@ p{
 
 .flex-box-row-fruits{
     display: flex;
+    justify-content: center;
     text-align: center;
 }
  
 .flex-item-fruits{
-    flex-basis: 33.3%;
-    margin: 0 auto;
+    flex-basis: 30%;
+    margin: 0 ;
 
     font-size: 1.5em;
     text-align: center;
@@ -382,57 +432,144 @@ p{
 }
 
 .flex-item-fruits img{
-    max-width: 340px;
+    max-width: 240px;
+    max-height: 240px;
+}
+
+
+.flex-item-fruits p{
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+}
+
+.flex-item-fruits p + p{
+    padding: 0;
+    margin: 1px;
+    font-size: 19px;
 }
 
 #fruits h2,
 p{
     text-align: center;
+    margin-top: 17px;
 }
 
 
+
+
+
+/* Pengaturan flex about.
+ */
+
+ .flex-box-about{
+    display: flex;
+    flex-direction: column;
+
+    max-width: 2000px;
+    max-height: 2000px;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 24px;
+    background-image: linear-gradient(to bottom right, #e0171770, #ffffff);
+}
+
+.flex-box-row-about{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.about-atas{
+    flex-basis: 30%;
+    overflow: auto;
+}
+
+.about-atas p{
+    font-size: 20px;
+    text-align: center;
+    width: 80%;
+    color: rgb(0, 0, 0);
+    padding: 0;
+    margin: 0;
+}
+
+.about-bawah{
+    flex-basis: 70%;
+    overflow: auto;
+}
+ 
+.flex-item-about{
+    flex-basis: 23%;
+    margin: 34px ;
+    display: flex;
+    flex-direction: column;
+
+    font-size: 1.5em;
+    padding: 20px;
+    background-color: white;
+    border-radius: 34px;
+    cursor: default;
+    margin-bottom: 160px;
+}
+
+.flex-item-about img{
+
+    width: 100%;
+    padding: 40px;
+    margin-top: -20px;
+    margin-bottom: -6px;
+    align-items: center;
+    border-radius: 1000px;
+    flex-basis: 30%;
+}
+
+.flex-box-about h2{
+    padding-top: 10px;
+}
+
+.flex-item-about p{
+    flex: 70%;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.flex-item-about .descript{
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.flex-item-about .role{
+    background-image: linear-gradient(to bottom right, #bb1515ce, #cf5a5ada, #cf5a5ab4);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.flex-item-about:hover{
+    box-shadow: 2px 8px 12px rgba(148, 148, 148, 0.84);
+    transition: all .3s ease-in-out;
+}
 
 
 
 
 /*
-    Pengaturan flex item footer 
+    Pengaturan flex item footer.
  */
-#contact{
-    background-color: #1d1d1d;
-    padding: 74px;
-}
 
-.logo-content{
-    float: left;
-    text-align: center;
-    line-height: 64px;
-    width: 33.3%;
-    height: 100%;
-    background-color: white;
-    border: 1px solid black;
-}
+ footer{
+    background-color: rgb(61, 61, 61);
+ }
 
-.alamat-content{
-    float: left;
-    text-align: center;
-    line-height: 64px;
-    width: 33.3%;
-    height: 100%;
-    background-color: white;
-    border: 1px solid black;
-}
-
-.send-us-content{
-    float: left;
-    text-align: center;
-    line-height: 20px;
-    width: 33.3%;
-    height: 100%;
-    background-color: white;
-    border: 1px solid black;
-}
-
-header{
-    display: inline;
-}
+ footer p{
+    color: white;
+    padding: 16px;
+    margin-bottom: 0;
+ }
