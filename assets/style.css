@@ -318,6 +318,7 @@ aside{
     letter-spacing: 10px;
     padding: 0;
     margin: 0;
+    color: rgb(54, 54, 54);
 }
 
 .flex-container-content h2{
@@ -399,6 +400,10 @@ p{
     margin-top: 17px;
 }
 
+#vegetable h2{
+    padding-top: 20px;
+}
+
 
 
 /* Pengaturan flex fruits
@@ -453,6 +458,10 @@ p{
 p{
     text-align: center;
     margin-top: 17px;
+}
+
+#fruits h2{
+    padding-top: 20px;
 }
 
 
@@ -560,6 +569,155 @@ p{
 
 
 
+
+
+/* Pengaturan flex contact.
+ */
+
+
+ .flex-box-contact{
+    display: flex;
+    flex-direction: column;
+
+    padding: 60px 74px 30px 70px;
+    max-width: 2000px;
+    max-height: 2000px;
+    margin: 0 auto;
+}
+
+.flex-box-contact h2{
+    text-align: center;
+    padding: 0;
+    padding-top: 24px;
+    margin: 0;
+    margin-bottom: 10px;
+    color: rgb(54, 54, 54);
+}
+
+.flex-box-row-contact{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.bagian-atas p{
+    padding: 0;
+    margin: 0;
+}
+
+.bagian-bawah{
+    margin-top: 20px;
+}
+
+.contact-item-kiri{
+    flex-basis: 40%;
+    font-size: 16px;
+    padding: 64px;
+    padding-top: 54px;
+    background: rgba(243, 243, 243, 0.473);
+}
+
+.contact-item-kiri p{
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(54, 54, 54);
+}
+
+.contact-item-kiri table{
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+.contact-item-kiri th{
+    padding-right: 20px;
+    font-size: 19px;
+    text-align: left;
+    color: rgb(54, 54, 54);
+}
+
+.contact-item-kiri td{
+    text-align: left;
+}
+
+.contact-item-kanan{
+    flex-basis: 60%;
+    display: flex;
+    padding: 60px 84px 60px 84px;
+}
+
+.send-us{
+    flex-basis: 100%;
+    border: 0px solid grey;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    margin-left: 40px;
+    
+    box-shadow: 2px 4px 10px 0 rgba(209, 209, 209, 0.84);
+
+}
+
+.send-us .name{
+    flex-basis: 25%;
+}
+.send-us .email{
+    flex-basis: 25%;
+}
+.send-us .comment{
+    flex-basis: 25%;
+}
+.send-us .btn-send{
+    flex-basis: 25%;
+    display: flex;
+}
+
+.space-kosong{
+    flex-basis: 70%;
+}
+
+.space-btn{
+    flex-basis: 25%;
+}
+
+.send-us p{
+    text-align: left;
+    margin-left: 16px;
+}
+
+.send-us input{
+    width: 90%;
+    border: 0.001px solid rgb(116, 116, 116);
+    border-radius: 10px;
+    line-height: 2em;
+    font-size: 16px;
+}
+
+.space-btn button{
+    
+    margin-top: 34px;
+    margin-bottom: 6px;
+    width: 100%;
+    height: 34px;
+    border: 0px solid rgb(116, 116, 116);
+    border-radius: 12px;
+    font-weight: bold;
+    background-color: #398AB9;
+    color: white;
+    font-size: 16px;
+}
+
+.space-btn button:hover{
+    font-size: 17px;
+    box-shadow: 0 2px 10px rgba(185, 185, 185, 0.834);
+    transition: all .1s ease-out;
+}
+
+
+
+
+
+
 /*
     Pengaturan flex item footer.
  */
@@ -573,3 +731,764 @@ p{
     padding: 16px;
     margin-bottom: 0;
  }
+
+
+
+
+
+
+
+
+/* Responsive Media Query Layout Pixel 2 XL */
+/* Responsive pada layar monitor komputer 24 inchi */
+@media screen and (max-width: 411px) {
+    
+    *{
+        box-sizing: border-box;
+    }
+
+    nav a{
+        font-size: 13.9px;
+        font-weight: 400;
+        text-decoration: none;
+        color: white;
+    }
+
+    nav a:hover{
+        font-weight: bolder;
+    }
+
+    body{
+        font-family: 'Quicksand', cursive;
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+    }
+
+    h2{
+        color: rgb(56, 56, 56);
+    }
+
+    .website-name{
+        height: 0px;
+    }
+
+    .website-name .title-web{
+        position: relative;
+        font-family: 'Fredoka One', cursive;
+        font-size: 24px;
+        top: 60px;
+        color: white;
+        letter-spacing: 0px;
+        text-shadow: 2px 2px 24px rgba(51, 51, 51, 0.774);
+    }
+
+    .website-name p{
+        position: relative;
+        
+        padding: 0 24px 0 24px;
+        font-size: 16px;
+        top: 40px;
+        left: 0px;
+        color: white;
+        text-shadow: 2px 2px 34px black;
+    }
+
+
+    /* CSS Slider Show Gambar */
+    .slider{
+        width: 100%;
+        border-radius: 16px;
+        margin-top: 0px;
+        overflow: hidden;
+    }
+
+    .slides{
+        width: 500%;
+        height: 182px;
+        display: flex;
+    }
+
+
+    .slides input{
+        display: none;
+    }
+
+    .slide{
+        width: 20%;
+        transition: 2s;
+    }
+
+    .slide img{
+        width: 120%;
+        object-position: bottom;
+    }
+
+
+    /* CSS untuk manual slider */
+    .navigation-manual{
+        position: relative;
+        width: 100%;
+        bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .manual-btn{
+        border: 2px solid #ffffffba;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    .manual-btn:not(:last-child){
+        position: relative;
+        margin-right: 40px;
+    }
+
+    .manual-btn:hover{
+        background: #ffffffba;
+    }
+
+
+    #radio1:checked ~ .first{
+        margin-left: 0;
+    }
+
+    #radio2:checked ~ .first{
+        margin-left: -20%;
+    }
+
+    #radio3:checked ~ .first{
+        margin-left: -40%;
+    }
+
+    #radio4:checked ~ .first{
+        margin-left: -60%;
+    }
+
+
+    /* CSS untuk automatis navigasi */
+    .navigation-auto{
+        position: absolute;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 162px;
+        left: 0px;
+    }
+
+    .navigation-auto div{
+        border: 2px solid #ffffffba;
+        padding: 5px;
+        border-radius: 10px;
+        transition: 1s;
+    }
+
+    .navigation-auto div:not(:last-child){
+        margin-right: 40px;
+    }
+
+    #radio1:checked ~ .navigation-auto .auto-btn1{
+        background: #ffffffba;
+    }
+
+    #radio2:checked ~ .navigation-auto .auto-btn2{
+        background: #ffffffba;
+    }
+
+    #radio3:checked ~ .navigation-auto .auto-btn3{
+        background: #ffffffba;
+    }
+
+    #radio4:checked ~ .navigation-auto .auto-btn4{
+        background: #ffffffba;
+    }
+    
+    
+    /* CSS untuk header nav */
+    nav li{
+        display: inline;
+        list-style-type: none;
+        margin-right: 20px;
+        color: white;
+    }
+
+    .head-nav{
+        background-color: rgb(255, 252, 64);
+        padding: 0;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        text-align: center;
+        font-size: 12px;
+        letter-spacing: 0px;
+        margin: 0;
+    }
+
+
+    nav{
+        background-color: #3b3b3bfb;
+        padding: 5px;
+        position: sticky;
+        top: 0;
+        text-align: center;
+        z-index: 2;
+    }
+
+    .card{
+        box-shadow: 0 4px 8px 0 rgba(150, 150, 150, 0.2);
+        border-radius: 16px;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+
+    main{
+        padding: 10px;
+        padding-top: 6px;
+        overflow: auto;
+    }
+
+
+    /* CSS Profile Konten */
+    .profilenya{
+        padding-top: 25px;
+    }
+    .deskripsi-singkat{
+        float: left;
+        width: 58%;
+    }
+
+    .deskripsi-singkat p{
+        text-align: justify;
+        margin-top: 4px;
+    }
+
+    .deskripsi-singkat h2{
+        margin-top: 0px;
+        padding-top: 4px;
+    }
+
+    aside{
+        float: right;
+        width: 42%;
+        height: 100%;
+        padding-left: 4px;
+        
+    }
+
+    aside .profile{
+        padding: 15px;
+        padding-top: 20px;
+    }
+
+    .profile:hover{
+        box-shadow: 0 4px 10px 0 rgba(136, 136, 136, 0.734);
+        transition: all .4s ease-in;
+    }
+
+    .profile header{
+        text-align: center;
+    }
+
+    .profile img{
+        margin-left: -20px;
+        width: 84px;
+    }
+
+    .profile h2{
+        margin-top: 0;
+        margin-bottom: 4px;
+        font-size: 12px;
+        padding: 0;
+    }
+    
+    .profile p{
+        margin: 0;
+        font-size: 9.5px;
+        padding: 0;
+    }
+    
+    .profile figcaption{
+        font-size: 9.5px;
+    }
+    
+    .profile h3{
+        font-size: 10px;
+        margin-top: 0px;
+        margin-bottom: 4px;
+    }
+
+    .profile table{
+        width: 100px !important;
+        margin-right:  40px;
+        padding-left: 0;
+    }
+
+    .profile table th, td{
+        font-size: 8px;
+    }
+    
+    .profile table td{
+        
+        width: 60px !important;
+        max-width: 100px !important;
+        padding-right: 10px !important;
+    }
+
+
+    /*
+        Pengaturan CSS Flexbox dan flex item.
+    */
+
+    .flex-container-column{
+        display: flex;
+        flex-direction: column;
+
+        /* poperty pendukung */
+        max-width: 3000px;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .flex-container-row{
+        display: flex;
+    }
+
+    .flex-container-content{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+        
+    }
+
+    .our-product{
+        position: relative;
+        top: 20px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bolder;
+        letter-spacing: 2px;
+        padding: 0;
+        margin: 0;
+        color: rgb(54, 54, 54);
+    }
+
+    
+    #fruits{
+        padding-top: 50px;
+    }
+    #shop{
+        padding-top: 40px;
+    }
+    #about{
+        padding-top: 40px;
+    }
+
+
+
+
+
+    /* Pengaturan flex vegetable
+    */
+    
+    #vegetable{
+        padding-top: 36px;
+    }
+
+    #vegetable h2{
+        margin-top: 0;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        font-size: 22px;
+        margin: 0;
+    }
+    
+    #vegetable .penjelasan{
+        margin: 0;
+        padding: 0;
+        padding-bottom: 20px;
+        text-align: justify;
+    }
+
+    .flex-box-vegetable{
+        display: flex;
+        flex-direction: column;
+
+        max-width: 2000px;
+        margin-left: 0px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .flex-box-row-vegetable{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .flex-item-vegetable{
+        flex-basis: 33%;
+        margin: 0 ;
+
+        font-size: 1.5em;
+        text-align: center;
+        padding: 10px;
+        border: 0.01px solid rgba(133, 133, 133, 0.842);
+        background-color: -webkit-linear-gradient(top, #d2d2d2, #ddd);
+        cursor: default;
+    }
+
+    .flex-item-vegetable img{
+        max-width: 80px;
+        max-height: 80px;
+    }
+
+    .flex-item-vegetable p{
+        padding: 0;
+        margin: 0;
+        font-size: 11px;
+    }
+
+    .flex-item-vegetable p + p{
+        padding: 0;
+        margin: 1px;
+        font-size: 10px;
+    }
+
+    #vegetable h2{
+        padding-top: 20px;
+    }
+
+
+
+    /* Pengaturan flex fruits
+    */
+
+    #fruits{
+        padding-top: 36px;
+    }
+
+    #fruits h2{
+        margin-top: 0;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        font-size: 22px;
+        margin: 0;
+    }
+    
+    #fruits .penjelasan{
+        margin: 0;
+        padding: 0;
+        padding-bottom: 20px;
+        text-align: justify;
+    }
+
+    .flex-box-fruits{
+        display: flex;
+        flex-direction: column;
+
+        max-width: 2000px;
+        margin-left: 0px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .flex-box-row-fruits{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .flex-item-fruits{
+        flex-basis: 33%;
+        margin: 0 ;
+
+        font-size: 1.5em;
+        text-align: center;
+        padding: 10px;
+        border: 0.01px solid rgba(133, 133, 133, 0.842);
+        background-color: -webkit-linear-gradient(top, #d2d2d2, #ddd);
+        cursor: default;
+    }
+
+    .flex-item-fruits img{
+        max-width: 80px;
+        max-height: 80px;
+    }
+
+    .flex-item-fruits p{
+        padding: 0;
+        margin: 0;
+        font-size: 12px;
+    }
+
+    .flex-item-fruits p + p{
+        padding: 0;
+        margin: 1px;
+        font-size: 10px;
+    }
+
+    #fruits h2{
+        padding-top: 20px;
+    }
+
+        
+    /* Pengaturan flex about.
+    */
+
+    .flex-box-about{
+        display: flex;
+        flex-direction: column;
+
+        max-width: 2000px;
+        max-height: 2000px;
+        margin: 0 auto;
+        margin-top: 10px;
+        text-align: center;
+        justify-content: center;
+        border-radius: 24px;
+        background-image: linear-gradient(to bottom right, #e0171770, #ffffff);
+    }
+
+    .flex-box-about h2{
+        font-size: 22px;
+    }
+
+    .about-atas p{
+        font-size: 14px;
+        text-align: center;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .flex-box-row-about{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .about-bawah{
+        padding: 0;
+        flex-basis: 70%;
+        overflow: auto;
+    }
+    
+    .flex-item-about{
+        flex-basis: 23%;
+        margin: 10px 24px 20px ;
+        display: flex;
+        flex-direction: column;
+
+        font-size: 1.5em;
+        padding: 6px 20px;
+        background-color: white;
+        border-radius: 34px;
+        cursor: default;
+    }
+
+    .flex-item-about img{
+
+        width: 100%;
+        align-items: center;
+        padding: 46px;
+        margin-top: -20px;
+        margin-bottom: -6px;
+        align-items: center;
+        border-radius: 1000px;
+        flex-basis: 30%;
+    }
+
+
+    .flex-item-about .role{
+        margin-left: 34px;
+        margin-right: 34px;
+        font-size: 14px;
+        background-image: linear-gradient(to bottom right, #bb1515ce, #cf5a5ada, #cf5a5ab4);
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 10px;
+        color: white;
+    }
+
+
+    .flex-item-about p{
+        font-size: 15px;
+        flex: 70%;
+        margin: 0;
+    }
+
+    .flex-item-about .descript{
+        font-size: 12px;
+        font-weight: normal;
+        text-align: center;
+        margin: 10px 24px 20px 24px;
+    }
+
+
+
+
+    .flex-item-about:hover{
+        box-shadow: 2px 8px 12px rgba(148, 148, 148, 0.84);
+        transition: all .3s ease-in-out;
+    }
+
+
+    /* Pengaturan flex contact.
+    */
+    
+    .flex-box-contact{
+        display: flex;
+        flex-direction: column;
+
+        padding: 0;
+        padding-top: 20px;
+        max-width: 2000px;
+        max-height: 2000px;
+        margin: 0 auto;
+    }
+
+    .flex-box-contact h2{
+        font-size: 22px;
+        text-align: center;
+        padding: 0;
+        padding-top: 24px;
+        margin: 0;
+        margin-bottom: 10px;
+        color: rgb(54, 54, 54);
+    }
+
+    .flex-box-row-contact{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .bagian-atas p{
+        padding: 0;
+        margin: 0;
+    }
+
+    .bagian-bawah{
+        margin-top: 20px;
+    }
+
+    .contact-item-kiri{
+        flex-basis: 40%;
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+        padding: 0;
+        background: rgba(243, 243, 243, 0.473);
+    }
+
+    .contact-item-kiri p{
+        font-size: 16px;
+        font-weight: bold;
+        color: rgb(54, 54, 54);
+    }
+
+    .contact-item-kiri table{
+        margin: 0 30px 40px;
+        width: 100%;
+        flex-basis: 100%;
+    }
+
+    .contact-item-kiri th{
+        font-size: 13px;
+        text-align: left;
+        color: rgb(54, 54, 54);
+    }
+
+    .contact-item-kiri td{
+        font-size: 12px;
+        text-align: left;
+    }
+
+
+    .contact-item-kanan{
+        flex-basis: 60%;
+        display: flex;
+        padding: 0;
+    }
+
+    .send-us{
+        flex-basis: 100%;
+        border: 0px solid grey;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+        margin: 20px;
+        
+        box-shadow: 2px 4px 10px 0 rgba(209, 209, 209, 0.84);
+
+    }
+
+    .send-us .name{
+        flex-basis: 25%;
+    }
+    .send-us .email{
+        flex-basis: 25%;
+    }
+    .send-us .comment{
+        flex-basis: 25%;
+    }
+    .send-us .btn-send{
+        flex-basis: 25%;
+        display: flex;
+    }
+
+    .space-kosong{
+        flex-basis: 70%;
+    }
+
+    .space-btn{
+        flex-basis: 25%;
+    }
+
+    .send-us p{
+        text-align: left;
+        margin-left: 16px;
+    }
+
+    .send-us input{
+        width: 90%;
+        border: 0.001px solid rgb(116, 116, 116);
+        border-radius: 10px;
+        line-height: 2em;
+        font-size: 16px;
+    }
+
+    .space-btn button{
+        
+        margin-top: 34px;
+        margin-bottom: 6px;
+        width: 100%;
+        height: 34px;
+        border: 0px solid rgb(116, 116, 116);
+        border-radius: 12px;
+        font-weight: bold;
+        background-color: #398AB9;
+        color: white;
+        font-size: 16px;
+    }
+
+    .space-btn button:hover{
+        font-size: 17px;
+        box-shadow: 0 2px 10px rgba(185, 185, 185, 0.834);
+        transition: all .1s ease-out;
+    }
+
+
+
+    
+
+
+}
