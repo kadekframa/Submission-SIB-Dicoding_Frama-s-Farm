@@ -181,6 +181,11 @@ nav li{
     color: white;
 }
 
+nav .mobile-tampilan{
+    position: absolute;
+    right: 84px;
+}
+
 li{
     color: white;
 }
@@ -918,6 +923,12 @@ p{
         margin-right: 20px;
         color: white;
     }
+    
+    nav .mobile-tampilan{
+        display: none;
+        position: absolute;
+        right: 84px;
+    }
 
     .head-nav{
         background-color: rgb(255, 252, 64);
@@ -1489,3 +1500,11 @@ p{
     }
     
 }
+
+
+
+/* CSS Mobile Device Result HTML Start */
+main figure .img-mobile{
+    margin: 60px 50px;
+}
+/* CSS Mobile Device Result HTML End */
